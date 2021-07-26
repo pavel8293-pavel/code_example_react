@@ -1,0 +1,16 @@
+@import '../styles/variables.scss';
+main {
+    transition: 225ms cubic-bezier(0.4, 0, 0.6, 1);
+    margin-left: 57px;
+    padding: 15px;
+}
+
+.opened+main {
+    margin-left: 285px;
+}
+
+@media (max-width: 768px) {
+    .opened+main {
+        margin-left: 57px;
+    }
+}
